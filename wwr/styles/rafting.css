@@ -186,3 +186,146 @@ footer .socialmedia a {
   display: flex;
   align-items: center;
 }
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details p {
+  text-align: left;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.form-image {
+  height: 100%;
+}
+
+.form-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form fieldset {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+/* Contact Page Layout */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin: 32px 0;
+}
+
+.contact-details {
+  padding: 16px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin: 32px 0;
+}
+
+.form-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--accent1-color);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button[type='submit'] {
+  background: var(--primary-color);
+  color: var(--accent2-color);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.contact-form button[type='submit']:hover {
+  background: #bfa12a;
+}
+
+.employee-profiles {
+  margin: 48px 0 32px 0;
+}
+
+.employee-profiles h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.profiles figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+}
+
+.profiles img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+}
+
+.profiles figcaption {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
