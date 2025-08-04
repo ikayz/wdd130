@@ -1,3 +1,8 @@
+.contact-form-section h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 24px;
+}
 :root {
   --primary-color: #d7b131; /* Gold (metallic) */
   --secondary-color: #e6f6f7; /* Azure (web) */
@@ -262,7 +267,8 @@ footer .socialmedia a {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: var(--accent1-color);
+  background: var(--accent2-color);
+  color: #fff;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
