@@ -107,7 +107,7 @@ a {
 
 .hero .hero-content {
   position: absolute;
-  top: 25%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -345,7 +345,127 @@ footer .socialmedia a {
   font-weight: 500;
 }
 
-/* Home Page Hero - match about.html style */
+/* Hero Section Standardization */
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto 2rem auto;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0; /* Reset margin for hero images */
+}
+
+.trips-list {
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.trips-list h2,
+.trips-table-section h2,
+.cta-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.trip {
+  background: var(--accent1-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.trip h3 {
+  margin: 1rem;
+  color: var(--accent2-color);
+}
+
+.trip p {
+  flex-grow: 1;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.trip .cta-btn {
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+/* Trips Table */
+.trips-table-section {
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.trips-table th {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-family: var(--heading-font);
+}
+
+.trips-table tbody tr:nth-child(even) {
+  background-color: var(--accent1-color);
+}
+
+.trips-table tbody tr:hover {
+  background-color: var(--secondary-color);
+}
+
+/* CTA Section */
+.cta-section {
+  background: var(--secondary-color);
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.wireframe-link {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 150px;
+}
+
+.wireframe-link:hover {
+  text-decoration: underline;
+}
+
 .home-hero {
   position: relative;
   width: 100%;
